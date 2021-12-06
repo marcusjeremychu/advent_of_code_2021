@@ -1,4 +1,4 @@
-# https://adventofcode.com/2021/day/4
+# https://adventofcode.com/2021/day/5
 
 PATH = "C:/Users/marcu/Desktop/advent_of_code/day5/input.txt"
 
