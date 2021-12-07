@@ -10,7 +10,10 @@ def main():
         for goal_pos in range(0, len(crab_positions)):
             curr_fuel = 0
             for crab_pos in crab_positions:
-                curr_fuel += abs(goal_pos - int(crab_pos))
+                diff = abs(goal_pos - int(crab_pos))
+                
+                # the sum of all previous numbers is n(n+1)/2
+                curr_fuel += (diff * (diff + 1))/2
 
             if curr_fuel < min_fuel:
                 min_fuel = curr_fuel
